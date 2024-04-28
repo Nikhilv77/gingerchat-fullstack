@@ -1,0 +1,125 @@
+.verify-signup-modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 57vh;
+  width: 50vw;
+  display: grid;
+  place-items: center;
+  border-radius: 0.4rem;
+  background-color: var(--logoTextColorPrimary);
+  z-index: 1003;
+ box-shadow: 0.4px 0.6px 2px #333;
+}
+.verify-signup-modal-container{
+  background-color: #333;
+  position: relative;
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  border-radius: 0.4rem;
+  height: 95%;
+  width: 95%;
+}
+.verify-signup-modal-container>i{
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  font-size: 1.6rem;
+  color: #fff;
+}
+.verify-signup-modal-container>h2{
+  width: 70%;
+  color: #f0f2f5;
+  text-align: center;
+  line-height: 1.6;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.authentication-otp{
+  display: grid;
+  place-items: center;
+  width: 50%;
+  gap: .5rem;
+}
+.authentication-otp>i{
+  font-size: 4rem;
+  color: var(--logoTextColorPrimary);
+}
+.signup-auth-form{
+  display: grid;
+  place-items: center  !important;
+  width: 100%;
+  gap: 0.5rem;
+}
+.signup-auth-form>input{
+  width: 100%;
+background-color: transparent;
+border-radius: 0.2rem;
+outline: none;
+border:1px solid var(--logoTextColorPrimary);
+padding: 0.7rem;
+font-size: 1.2rem;
+font-family: var(--font-family);
+font-weight: 600;
+color: #fff !important;
+}
+.signup-auth-form>button{
+  border-radius: 0.4rem;
+  padding: 0.8rem 1.3rem 0.8rem 1.3rem;
+  border: none;
+  outline: none;
+  font-family: var(--font-family);
+  background-color: var(--logoTextColorPrimary);
+  font-size: 1.1rem;
+  color: var(--black);
+  cursor: pointer;
+  font-weight: 600;
+}
+.signup-auth-form>p{
+  color: red;
+  font-size: 1.3rem;
+  
+}
+@media screen and (max-width:1200px){
+  .verify-signup-modal{
+    width: 50vw;
+  }
+  .verify-signup-modal-container>h2{
+    width: 75%;
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width:1000px){
+  .verify-signup-modal{
+    width: 60vw;
+  }
+  .verify-signup-modal-container>h2{
+    width:80%;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width:850px){
+  .verify-signup-modal{
+    width: 70vw;
+  }
+
+}
+@media screen and (max-width:650px){
+  .verify-signup-modal{
+    width: 80vw;
+  }
+}
+@media screen and (max-width:500px){
+  .verify-signup-modal{
+    width: 85vw;
+  }
+
+}
+@media screen and (max-width:400px){
+  .verify-signup-modal{
+    width: 92vw;
+  }
+
+}

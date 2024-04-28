@@ -1,0 +1,193 @@
+.login-component{
+  display: grid;
+  place-items: center;
+  gap: 0.6rem;
+  width: 70%;
+}
+.login-component>img{
+  display: none;
+  height: 3rem;
+  width: 4em;
+  filter: brightness(0.2);
+}
+.login-form{
+  border: 1px solid #333;
+ width: 100%;
+ display: grid;
+ place-items: center;
+ gap: 1.5rem;
+ padding: 2rem ;
+ padding-left: 1rem;
+ padding-right: 1rem;
+ font-family:"Josefin Sans", sans-serif;
+
+}
+.logo{
+  display: grid;
+}
+.logo div{
+  display: flex;
+  justify-content: center;
+}
+.logo-text{
+  font-size: 2.5rem;
+}
+.logo span{
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: 'Handlee', cursive;
+  color: #333;
+}
+
+.logo-text:nth-of-type(1){
+  font-family: 'Handlee', cursive;
+  color: var(--logoTextColorPrimary);
+}
+.logo-text:nth-of-type(2){
+  font-family: 'Handlee', cursive;
+  color: #333;
+}
+/* .email-input,.password-input,.login-button{
+width: 80%;
+} */
+.inputs{
+  width: 100% !important;
+  display: grid;
+  justify-items: start !important;
+  align-items: center !important;
+  gap: 0.5rem;
+  
+}
+.email-input-login, .password-input-login{
+  width: 100%;
+}
+.email-input-login input, .password-input-login input{
+  font-family:"Josefin Sans", sans-serif !important;
+width:100% !important;
+font-size: 1.25rem;
+outline: none;
+/* border-radius: .3rem; */
+font-weight: 500 !important;
+border:1px solid #333;
+color: #484848 !important;
+padding-top: .8rem !important;
+padding-bottom: 0.8rem !important;
+padding-left:0.5rem;
+padding-right: 0.5rem;
+}
+.password-input-login{
+  position: relative;
+}
+.password-input-login i{
+  cursor: pointer;
+font-size: 1.4rem;
+  position: absolute;
+ top: 50%;
+ left: 92%;
+ transform: translate(-50%,-50%);
+color: #333;
+}
+.login-button{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.login-button button{
+  border-radius: 0.4rem;
+  font-family: var(--font-family);
+  padding: 0.8rem 1.3rem 0.8rem 1.3rem;
+  border: none;
+  outline: none;
+  font-family: var(--font-family);
+  background-color: var(--logoTextColorPrimary);
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100%;
+}
+
+.forgot-password span{
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #484848;
+  font-weight: 500;
+}
+.forgot-password span:hover{
+  color: red;
+}
+.redirect-to-signup{
+  border: 1px solid #484848;
+  /* margin-right: 1rem; */
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family:"Josefin Sans", sans-serif;
+  gap: 0.2rem;
+  /* border-radius: .3rem; */
+}
+.redirect-to-signup span{
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 500;
+  color: #484848;
+}
+
+.redirect-to-signup span:nth-of-type(2){
+  color: var(--logoTextColorPrimary);
+  cursor: pointer;
+}
+.auth-error{
+  color: red;
+  font-size: 1.2rem;
+  margin: 0.3rem;
+}
+@media  screen and (max-width:1200px) {
+
+.login-form{
+  background-color: #f0f2f5;
+}
+.redirect-to-signup{
+  background-color: #f0f2f5;
+}
+.login-component{
+  gap: 1rem;
+}
+.login-component>img{
+  display: grid;
+}
+}
+@media  screen and (max-width:650px) {
+.login-component{
+  width: 80%;
+}
+}
+@media  screen and (max-width:550px) {
+  .login-component{
+    width: 85%;
+  }
+  }
+  @media  screen and (max-width:500px) {
+    .login-component{
+      width: 90%;
+    }
+    .redirect-to-signup{
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    }
+    @media  screen and (max-width:440px) {
+      .login-component{
+        width: 95%;
+      }
+      }
+      @media  screen and (max-width:400px) {
+        .login-component{
+          width: 97%;
+        }
+
+        }
+       

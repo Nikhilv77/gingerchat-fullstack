@@ -1,0 +1,140 @@
+.others-profile-modal{
+  height: 85vh;
+  width: 40vw;
+  background-color: var(--logoTextColorPrimary);
+  border-radius: .4rem;
+  box-shadow: 2px 2px 5px rgb(0,0,0);
+  position: fixed;
+  display: grid;
+  place-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: 0.5s ease-in-out;
+  z-index: 1004;
+}
+.others-profile-modal-container{
+  position: relative;
+  width: 95%;
+  background-color: #333;
+  height: 95%;
+  border-radius: 0.4rem;
+display: grid;
+place-items: center;
+  padding: 0.5rem;
+  overflow-y: scroll;
+}
+.others-profile-modal-container>i{
+  position: absolute;
+  top: 0.2%;
+  right: 0.2%;
+  color: #fff;
+  font-size: 2rem;
+  filter: drop-shadow(2px 2px 2px rgb(0,0,0));
+  cursor: pointer;
+}
+
+.others-profile-modal-container-image-actions-container{
+ width: 100%;
+ border-radius: 0.4rem;
+ display: grid;
+ place-items: center;
+ gap: 1rem;
+}
+.others-names{
+  text-align: center;
+}
+.others-names>h2{
+  font-size: 1.6rem;
+  color: var(--logoTextColorPrimary);
+  font-weight: 500;
+}
+.others-names>span{
+  font-size: 1.3rem;
+  color: var(--logoTextColorPrimary);
+  font-weight: 500;
+}
+.others-profile-modal-container-image-actions-container>img{
+  width: 100%;
+  height: 15rem;
+  object-fit: contain;
+  border-radius: 0.4rem;
+  background-color: #000;
+}
+.others-profile-modal-container-image-actions-container>p{
+  font-size: 1.3rem;
+  color: #f0f2f5;
+  font-weight: 500;
+  text-align: center;
+}
+.others-delete-update-actions{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.others-location{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}.others-number-of-friends>span{
+  font-size: 1.5rem;
+  color: var(--logoTextColorPrimary);
+}
+.others-location>i{
+  font-size: 2rem;
+  color: var(--logoTextColorPrimary);
+}
+.others-location>span{
+  font-size: 1.5rem;
+  color: var(--logoTextColorPrimary);
+}
+.others-delete-update-actions>button{
+  border-radius: 0.4rem;
+  padding: 0.8rem 1.3rem 0.8rem 1.3rem;
+  border: none;
+  outline: none;
+  font-family: var(--font-family);
+  background-color: var(--logoTextColorPrimary);
+  font-size: 1.1rem;
+  color: var(--black);
+  cursor: pointer;
+  font-weight: 600;
+}
+.others-delete-update-actions>button:nth-child(2){
+  background-color: #ff2400;
+  color: #f0f2f5;
+}
+@media screen and (max-width:1200px){
+  .others-profile-modal{
+    width: 50vw;
+  }
+  .others-profile-modal-container{
+   padding: 1rem;
+  }
+}
+@media screen and (max-width:1000px){
+  .others-profile-modal{
+    width: 60vw;
+  }
+
+}
+@media screen and (max-width:850px){
+  .others-profile-modal{
+    width: 70vw;
+  }
+
+}
+@media screen and (max-width:650px){
+  .others-profile-modal{
+    width: 80vw;
+  }
+
+}
+@media screen and (max-width:500px){
+  .others-profile-modal{
+    width: 90vw;
+  }
+
+}

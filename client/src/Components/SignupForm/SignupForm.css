@@ -1,0 +1,229 @@
+.signup-component{
+  display: grid;
+  place-items: center;
+  gap: 0.6rem;
+  width: 70%;
+}
+.signup-component>img{
+  display: none;
+  height: 3rem;
+  width: 4em;
+  filter: brightness(0.2);
+}
+.signup-form{
+  border: 1px solid #333;
+ width: 100%;
+ display: grid;
+ place-items: center;
+ gap: 1.5rem;
+ padding: 2rem ;
+ padding-left: 1rem;
+ padding-right: 1rem;
+ font-family:"Josefin Sans", sans-serif;
+ /* border-radius: .3rem; */
+ 
+}
+.logo{
+  display: grid;
+}
+.logo div{
+  display: flex;
+  justify-content: center;
+}
+.logo-text{
+  font-size: 2.5rem;
+}
+.logo span{
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: 'Handlee', cursive;
+  color: #333;
+}
+
+.logo-text:nth-of-type(1){
+  font-family: 'Handlee', cursive;
+  color: var(--logoTextColorPrimary);
+}
+.logo-text:nth-of-type(2){
+  font-family: 'Handlee', cursive;
+  color: #333;
+}
+/* .email-input,.password-input,.signup-button{
+width: 80%;
+} */
+.inputs{
+  width: 100% !important;
+  display: grid;
+  justify-items: start !important;
+  align-items: center !important;
+  gap: 0.5rem;
+  
+}
+.name-input-signup, .user-name-input-signup, .email-input-signup, .password-input-signup{
+  width: 100%;
+}
+.password-input-signup{
+  display: grid;
+  gap: .4rem;
+}
+.user-name-input-signup, .email-input-signup{
+  position: relative;
+}
+.name-input-signup input, .user-name-input-signup input, .email-input-signup input, .password-input-signup input{
+  font-family:"Josefin Sans", sans-serif !important;
+width:100% !important;
+font-size: 1.25rem;
+outline: none;
+/* border-radius: .3rem; */
+font-weight: 400;
+border:1px solid #333;
+padding-top: .8rem !important;
+padding-bottom: .8rem !important;
+padding-left:0.5rem;
+padding-right: 0.5rem;
+}
+.disabled-signup-button{
+  background-color: #888888 !important;
+}
+.ri-thumb-up-fill{
+  color: green;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translate(-50%,-50%);
+}
+.ri-thumb-down-fill{
+  color: red;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translate(-50%,-50%);
+}
+.password-input-signup{
+  position: relative;
+}
+.password-input-signup i{
+  cursor: pointer;
+font-size: 1.4rem;
+  position: absolute;
+ top: 50%;
+ left: 95%;
+ transform: translate(-50%,-50%);
+color: #333;
+}
+.password-invalid{
+  color: red;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.signup-button{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.signup-button button{
+  border-radius: 0.4rem;
+  font-family: var(--font-family);
+  padding: 0.8rem 1.3rem 0.8rem 1.3rem;
+  border: none;
+  outline: none;
+  font-family: var(--font-family);
+  background-color: var(--logoTextColorPrimary);
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100%;
+}
+
+
+.forgot-password span{
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #484848;
+  font-weight: 500;
+}
+.redirect-to-signup{
+  border: 1px solid #484848;
+  /* margin-right: 1rem; */
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family:"Josefin Sans", sans-serif;
+  gap: 0.2rem;
+  /* border-radius: .3rem; */
+}
+.redirect-to-signup span{
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 500;
+  color: #484848;
+}
+.redirect-to-signup span:nth-of-type(2){
+  color: var(--logoTextColorPrimary);
+  cursor: pointer;
+}
+.verify-signup-backdrop{
+  z-index: 1002 !important;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0 ;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+  backdrop-filter: blur(10px) brightness(90%);
+}
+
+@media  screen and (max-width:1200px) {
+
+  .signup-form{
+    background-color: #f0f2f5;
+  }
+  .redirect-to-signup{
+    background-color: #f0f2f5;
+  }
+  .signup-component{
+    gap: 1rem;
+  }
+  .signup-component>img{
+    display: grid;
+  }
+  }
+  @media  screen and (max-width:650px) {
+  .signup-component{
+    width: 80%;
+  }
+  }
+  @media  screen and (max-width:550px) {
+    .signup-component{
+      width: 85%;
+    }
+    }
+    @media  screen and (max-width:500px) {
+      .signup-component{
+        width: 90%;
+      }
+      .redirect-to-signup{
+        flex-direction: column;
+        gap: 0.4rem;
+      }
+      }
+      @media  screen and (max-width:440px) {
+        .signup-component{
+          width: 95%;
+        }
+        }
+        @media  screen and (max-width:400px) {
+          .signup-component{
+            width: 97%;
+          }
+  
+          }
+         

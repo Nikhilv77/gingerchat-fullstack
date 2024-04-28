@@ -1,0 +1,194 @@
+.chat-top{
+  width: 100%;
+  height: 99%;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+padding-left: 3rem;
+padding-top: 0.3rem;
+font-family: "Josefin Sans", sans-serif;
+padding-right: 3rem;
+position: relative;
+background-color: #333;
+box-shadow: 0 2px 7px rgba(0,0,0,0.5);
+}
+.chat-top-upper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: 5rem;
+  padding: 1rem;
+  border-bottom: 1px solid #888888;
+  padding-bottom: 0.3rem;
+
+  /* border-radius: 0.3rem; */
+}
+.chat-top-upper-chats{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1rem;
+  background-color: #ffdf00;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.chat-top-upper-chats>i{
+  font-size: 1.6rem;
+  color: #333;
+}
+.chat-top-upper-chats>span{
+  font-size: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+.chat-top-upper-user{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+.chat-top-hr{
+  border: 1px solid #888888;
+}
+.chat-top-upper-user>p{
+  font-size: 1.2rem;
+  color: #f0f2f5;
+}
+.chat-top-upper-user>p:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.chat-top-upper-user>img{
+height: 3.5rem;
+width: 3.5rem;
+border-radius: 50%;
+}
+.chat-top-body{
+ height: 65vh;
+
+  width: 100%;
+  overflow-y: scroll;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+align-self: flex-start;
+}
+.message-scroller{
+  width: 100%;
+  /* height: 65vh; */
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+align-self: flex-start;
+}
+.my-message{
+align-self: flex-end;
+background-color: #ffdf00;
+padding: 0.5rem 1rem 0.5rem 1rem;
+display: grid;
+place-items: center;
+margin-top: 0.7rem;
+border-radius: 0.9rem 0.4rem 0.9rem 0.4rem;
+max-width: 35%;
+color: #333;
+height: auto;
+font-size: 1.3rem;
+box-shadow: 1px 1px 2px #333;
+margin-right: 0.2rem;
+margin-bottom: 0.3rem;
+} 
+.my-message>span, .others-message>span{
+  font-size: 0.8rem;
+}
+.others-message{
+  align-self: flex-start;
+  
+  margin-top: 0.7rem;
+  background-color: #6A0DAD;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  display: grid;
+  place-items: center;
+  max-width: 35%;
+  border-radius: 0.9rem 0.4rem 0.9rem 0.4rem;
+  color: var(--cardColor);
+  height: auto;
+  box-shadow: 1px 1px 2px #333;
+  font-size: 1.3rem;
+}
+.chat-top-bottom{
+  display: flex;
+width: 92%;
+position: absolute;
+bottom: 2%;
+margin: auto;
+z-index: 999;
+height: 4rem;
+display: grid;
+grid-template-columns: auto 4rem;
+place-items: center;
+padding: 0.5rem 0 0 0;
+}
+.chat-top-bottom>button{
+  background-color:#ffdf00;
+  border-radius: 0.3rem;
+  padding: 0.6rem 1.1rem 0.6rem 1.1rem;
+  margin: 0 0.3rem 0 0.3rem;
+  color: #333;
+  font-family: "Josefin Sans", sans-serif;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.no-messages{
+  margin: auto;
+  display: grid;
+  place-items: center;
+
+}
+.no-messages>i{
+  font-size: 3rem;
+  color: #f0f2f5;
+}
+.no-messages>p{
+  font-size: 1.6rem;
+  color: #f0f2f5;
+}
+.others-profile-modal-backdrop{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1002;
+  background-color: rgba(255,255,255,0.5);
+  backdrop-filter: blur(10px) brightness(90%);
+}
+@media screen and (max-width:800px){
+  .chat-top{
+ padding: 0 1rem 0 1rem;
+  }
+  .chat-top-upper-chats{
+    display: flex;
+  }
+ 
+}
+@media screen and (max-width:750px) {
+  .my-message, .others-message{
+   max-width: 45%;
+   font-size: 1.1rem;
+  }
+  .chat-top{
+    padding: 0 0.5rem 0 0.5rem;
+     }
+}

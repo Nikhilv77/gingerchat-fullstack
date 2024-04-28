@@ -1,0 +1,85 @@
+:root {
+  --yellow: #f5c32c;
+  --orange: #fca61f;
+  --black: #242d49;
+  --gray: rgba(36, 45, 73, 0.65);
+  --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
+  --hrColor: #cfcdcd;
+  --cardColor: #E5E4E2;
+  --buttonBg: linear-gradient(98.63deg, #f9a225 0%, #f95f35 100%);
+  --inputColor: rgba(40, 52, 62, 0.07);
+  --photo: #4CB256;
+  --video: #4A4EB7;
+  --location: #EF5757;
+--shedule: #E1AE4A;
+--hunterGreen:#3F704D;
+--logoTextColorPrimary : #ffdf00;
+--font-family : "Josefin Sans", sans-serif
+}
+body{
+  font-family:"Josefin Sans", sans-serif;
+}
+*,*::before,*::after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+i{
+  -webkit-tap-highlight-color: transparent;
+  }
+  /* button{
+    -webkit-tap-highlight-color: transparent;
+    } */
+.app{
+  color: var(--black);
+  background-color: #f3f3f3;
+  overflow: hidden;
+}
+.button{
+  border-radius: 0.5rem;
+  background-color: #7393B3;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+ 
+}
+::-webkit-scrollbar {
+  width: 8px; 
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #555; 
+  border-radius: 10px; 
+}
+
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+
+.logout-backdrop{
+  display: none;
+  z-index: 1002 !important;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+  backdrop-filter: blur(10px) brightness(90%);
+}
+.delete-account-backdrop{
+  display: none;
+  z-index: 1002 !important;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+  backdrop-filter: blur(10px) brightness(90%);
+}

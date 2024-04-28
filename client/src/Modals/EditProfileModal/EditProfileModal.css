@@ -1,0 +1,211 @@
+.edit-profile-modal{
+  height: 95vh;
+  width: 50vw;
+  background-color: var(--logoTextColorPrimary);
+  border-radius: 0.4rem;
+  box-shadow: 2px 2px 5px rgb(0,0,0);
+  position: fixed;
+  display: grid;
+  place-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: 0.5s ease-in-out;
+  z-index: 1003;
+}
+.ri-close-large-line{
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  color: #fff;
+  font-size: 2.3rem;
+  filter: drop-shadow(2px 2px 2px rgb(0,0,0));
+  cursor: pointer;
+}
+.edit-profile-modal-container{
+  background-color: #333;
+  width: 95%;
+  height: 95%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+ justify-content: flex-start;
+ align-items: center;
+  gap: 2rem;
+  border-radius: 0.4rem;
+  padding: 2rem;
+  overflow-y: scroll;
+}
+.edit-profile-modal-container>h2{
+  font-size: 2rem;
+  color: var(--logoTextColorPrimary);
+  font-weight: 500;
+}
+.edit-profile-modal-items{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: center;
+ gap: 1rem;
+  height: 90%;
+  width: 80%;
+  overflow-y: scroll;
+}
+.edit-profile-modal-image{
+  display: grid;
+  place-items: center;
+  position: relative;
+  width: 100%;
+  padding-right: 0.6rem;
+}
+.edit-profile-modal-image>img{
+  height: 14rem;
+  width: 100%;
+  border-radius: 0.2rem;
+  align-self: end;
+  object-fit: contain;
+  background-color: #000;
+}
+.edit-profile-modal-image>i{
+  font-size: 1.7rem;
+  color: var(--logoTextColorPrimary);
+  cursor: pointer;
+  justify-self: end;
+}
+.edit-profile-modal-form{
+width: 100%;
+display: grid;
+justify-items: start;
+align-items: center;
+gap: 1rem;
+padding-right: 0.6rem;
+}
+.edit-name-input, .edit-user-name-input, .edit-lives-in, .edit-about{
+  width: 100%;
+  display: grid;
+  align-items: center;
+  gap: 0.3rem;
+}
+.edit-user-name-input{
+  position: relative;
+}
+.edit-user-name-input>i{
+  position: absolute;
+ top: 63%;
+ left: 94%;
+ transform: translate(-50%,-50%);
+}
+.edit-name-input>label, .edit-user-name-input>label, .edit-lives-in>label, .edit-about>label{
+  font-size: 1.2rem;
+  color: #f0f2f5;
+  font-weight: 600;
+}
+.edit-name-input>input, .edit-user-name-input>input, .edit-lives-in>input{
+width: 100%;
+background-color: var(--logoTextColorPrimary);
+border-radius: 0.2rem;
+color: #333;
+outline: none;
+border: none;
+padding: 0.7rem;
+font-size: 1.1rem;
+font-family: var(--font-family);
+font-weight: 600;
+}
+.edit-about>textarea{
+  width: 100%;
+background-color: var(--logoTextColorPrimary);
+border-radius: 0.2rem;
+color: #333;
+outline: none;
+border: none;
+padding: 0.7rem;
+font-size: 1.1rem;
+font-family: var(--font-family);
+resize: none;
+font-weight: 600;
+}
+.edit-profile-modal-form>button{
+border-radius: 0.4rem;
+padding: 0.8rem 1.3rem 0.8rem 1.3rem;
+border: none;
+outline: none;
+font-family: var(--font-family);
+background-color: var(--logoTextColorPrimary);
+font-size: 1.1rem;
+color: var(--black);
+cursor: pointer;
+font-weight: 600;
+}
+.edit-profile-modal-form>span{
+  color: var(--logoTextColorPrimary);
+  font-size: 1rem;
+justify-self: end;
+}
+.update-button-edit-disabled{
+  background-color: #787878 !important;
+}
+.profile-updated-span{
+  color: #32cd32 !important;
+  font-size: 1.4rem;
+}
+@media screen and (max-width:1200px){
+  .edit-profile-modal{
+    height: 95vh;
+    width: 60vw;
+   
+  }
+  .edit-profile-modal-container{
+   padding: 2rem 0.5rem 2rem 0.5rem;
+  }
+  .edit-profile-modal-items{
+    height: 90%;
+    width: 90%;
+
+  }
+}
+@media screen and (max-width:1000px){
+  .edit-profile-modal{
+    height: 95vh;
+    width: 70vw;
+   
+  }
+}
+@media screen and (max-width:900px){
+  .edit-profile-modal{
+    height: 95vh;
+    width: 80vw;
+   
+  }
+  .edit-profile-modal-items{
+ 
+    height: 90%;
+    width: 95%;
+  
+  }
+}
+@media screen and (max-width:900px){
+  .edit-profile-modal{
+    height: 95vh;
+    width: 90vw;
+   
+  }
+  .edit-profile-modal-container>h2{
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width:450px){
+  .edit-profile-modal{
+    height: 95vh;
+    width: 92vw;
+   
+  }
+  .edit-profile-modal-container>h2{
+    font-size: 1.7rem;
+  }
+.edit-profile-modal-container>i{
+  font-size: 2rem;
+  top: 1%;
+  right: 1%;
+}
+}

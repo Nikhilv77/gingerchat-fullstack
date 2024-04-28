@@ -1,0 +1,114 @@
+.logout-modal{
+  height: 60vh;
+  width: 40vw;
+  background-color: var(--logoTextColorPrimary);
+  border-radius: 1rem;
+  box-shadow: 2px 2px 5px rgb(0,0,0);
+  position: fixed;
+  place-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  /* transition: 0.5s ease-in-out; */
+  z-index: 1003;
+  display: none;
+}
+.ri-close-large-line{
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  color: #fff;
+  font-size: 2.3rem;
+  filter: drop-shadow(2px 2px 2px rgb(0,0,0));
+  cursor: pointer;
+}
+.logout-box{
+  background-color: #333;
+  height: 92%;
+  width: 95%;
+  margin: auto;
+  border-radius: 0.4rem;
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+.logout-container>hr {
+  border: 1px solid #f0f2f5;
+  width: 100%;
+}
+.logout-container{
+  display: grid;
+  place-items: center;
+gap: 2rem;
+
+}
+.logout-container>h2{
+  color: #f0f2f5;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.logout-btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.logout-btn>button{
+  padding: 0.9rem 1.5rem 0.9rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  font-size: 1.3rem;
+  border-radius: 0.4rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px black;
+}
+.logout-btn>button:nth-child(1){
+  background-color: var(--logoTextColorPrimary);
+  color: #fff;
+  /* text-shadow: 0.5px 0.5px 0.5px #333; */
+}
+.logout-btn>button:nth-child(2){
+  background-color: var(--logoTextColorPrimary);
+  color: #fff;
+  /* text-shadow: 0.5px 0.5px 0.5px #333; */
+}
+@media screen and (max-width:1100px){
+  .logout-modal{
+    height: 68vh;
+    width: 50vw;
+  }
+  .logout-container>h2{
+    font-size: 1.4rem;
+  }
+  .logout-container>span{
+    font-size: 1.2rem;
+  }
+  .logout-btn>button{
+    padding: 0.6rem 1.2rem 0.6rem 1.2rem;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width:700px){
+  .logout-modal{
+    height: 68vh;
+    width: 60vw;
+  }
+  .logout-container>h2{
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width:500px){
+  .logout-modal{
+    width: 80vw;
+  }
+}
+@media screen and (max-width:420px){
+  .logout-modal{
+    width: 85vw;
+  }
+}

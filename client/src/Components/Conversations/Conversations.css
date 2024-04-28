@@ -1,0 +1,48 @@
+.conversation-top{
+  background-color: #333;
+  border-bottom: 1px solid #888;
+  /* width: 100%; */
+}
+.conversation-top:hover{
+background-color: #6A0DAD;
+}
+.conversation{
+  height: 5rem;
+  font-family: "Josefin Sans", sans-serif;
+  border-radius: 0.3rem;
+  display: grid;
+  place-items: center;
+ grid-template-columns: 6rem auto;
+  width: 100%;
+}
+
+.conversation>img{
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  
+}
+.conversation-information{
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  width: 100%;
+}
+.conversation-information>p{
+color: #f0f2f5;
+font-size: 1.15rem;
+padding: 0;
+  margin: 0;
+}
+.user-is-friend{
+  font-size: 1.05rem;
+  color: var(--logoTextColorPrimary);
+  padding: 0;
+  margin: 0;
+}
+.user-is-stranger{
+  font-size: 1.05rem;
+  color: red;
+  padding: 0;
+  margin: 0;
+}

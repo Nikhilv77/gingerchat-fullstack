@@ -1,0 +1,121 @@
+.delete-account-modal{
+  height: 68vh;
+  width: 40vw;
+  background-color: var(--logoTextColorPrimary);
+  border-radius: 0.4rem;
+  box-shadow: 2px 2px 5px rgb(0,0,0);
+  position: fixed;
+  place-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  /* transition: 0.5s ease-in-out; */
+  z-index: 1003;
+  display: none;
+}
+.ri-close-large-line{
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  color: #fff;
+  font-size: 2.3rem;
+  filter: drop-shadow(2px 2px 2px rgb(0,0,0));
+  cursor: pointer;
+}
+.delete-account-box{
+  background-color: #333;
+  height: 92%;
+  width: 95%;
+  margin: auto;
+  border-radius: 0.4rem;
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+.delete-account-container>hr {
+  border: 1px solid #f0f2f5;
+  width: 100%;
+}
+.delete-account-container{
+  display: grid;
+  place-items: center;
+gap: 2rem;
+
+}
+.delete-account-container>h2{
+  color: #f0f2f5;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.delete-account-container>span{
+  color: red;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.delete-account-btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.delete-account-btn>button{
+  padding: 0.9rem 1.5rem 0.9rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  font-size: 1.3rem;
+  border-radius: 0.4rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px black;
+}
+.delete-account-btn>button:nth-child(1){
+  background-color: var(--logoTextColorPrimary);
+  color: #fff;
+  /* text-shadow: 0.5px 0.5px 0.5px #333; */
+}
+.delete-account-btn>button:nth-child(2){
+  background-color: var(--logoTextColorPrimary);
+  color: #fff;
+  /* text-shadow: 0.5px 0.5px 0.5px #333; */
+}
+@media screen and (max-width:1100px){
+  .delete-account-modal{
+    height: 68vh;
+    width: 50vw;
+  }
+  .delete-account-container>h2{
+    font-size: 1.4rem;
+  }
+  .delete-account-container>span{
+    font-size: 1.2rem;
+  }
+  .delete-account-btn>button{
+    padding: 0.6rem 1.2rem 0.6rem 1.2rem;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width:700px){
+  .delete-account-modal{
+    height: 68vh;
+    width: 60vw;
+  }
+  .delete-account-container>h2{
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width:500px){
+  .delete-account-modal{
+    height: 72vh;
+    width: 80vw;
+  }
+}
+@media screen and (max-width:420px){
+  .delete-account-modal{
+    height: 72vh;
+    width: 85vw;
+  }
+}

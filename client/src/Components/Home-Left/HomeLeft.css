@@ -1,0 +1,19 @@
+.home-left{
+  height: 100%;
+  width: 100%;
+  /* background-color: rgba(255, 223, 0, 1); */
+  display: grid;
+  place-items: center;
+  
+}
+.home-left-items{
+  display: grid;
+  place-items: center;
+  gap: 3rem;
+}
+.home-left-items>i{
+  font-size: 3rem;
+  color: #333;
+  text-shadow: 1px 1px 3px rgb(0,0,0);
+  cursor: pointer;
+}

@@ -1,0 +1,42 @@
+
+
+  .signup{
+    display: grid;
+    place-items: center;
+      height: 100vh;
+      width: 100vw;
+      background-color: white;
+    }
+    .signup-container{
+      display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 1rem;
+      height: 100%;
+      width: 75vw;
+    }
+    
+    
+    @media screen and (max-width:1200px) {
+      .signup{
+          background-color: var(--logoTextColorPrimary);
+        }
+        .signup-container{
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        }
+      
+        .signup-image-for-signup{
+          display: none;
+        }
+        .mobile-signup-image{
+          display: grid;
+        }
+       
+    }
+    @media screen and (max-width:500px) {
+        .signup-container{
+        width: 85vw;
+        }
+       
+    }

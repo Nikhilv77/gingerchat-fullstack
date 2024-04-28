@@ -1,0 +1,95 @@
+.my-post{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  background-color: #f0f2f5;
+  box-shadow: 1px 1px 7px rgba(0,0,0,0.5);
+  justify-content: center;
+  width: 95%;
+
+}
+.my-post>img{
+  border-radius: 0.4rem;
+  width: 100%;
+  max-height: 25rem;
+object-fit: contain;
+background-color: #000;
+}
+.my-post-user-description{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  width: 95%;
+}
+.my-user-name-description{
+  
+  color: var(--logoTextColorPrimary);
+  text-shadow: 0.5px 0.5px 0.5px #333;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.my-user-name-description:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.my-post-name-description{
+  text-align: center;
+  color: #333;
+  font-size: 1.2rem;
+
+}
+.my-post-actions{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.my-post-like-action, .my-post-comment-action{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  width: 4rem;
+
+}
+.my-post-like-action>i, .my-post-comment-action>i{
+  font-size: 2rem;
+  cursor: pointer;
+}
+.my-post-like-action>span, .my-post-comment-action>span{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--logoTextColorPrimary);
+}
+
+.my-post-delete-action>i{
+font-size: 2rem;
+color: red;
+cursor: pointer;
+}
+.mypost-user-description-name-image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+.mypost-user-description-name-image>img{
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+}
+@media screen and (max-width:600px) {
+  .my-post>img{
+    max-height: 19rem;
+  }
+}
+@media screen and (max-width:400px) {
+  .my-post>img{
+    max-height: 17rem;
+  }
+}

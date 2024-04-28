@@ -1,0 +1,132 @@
+.post-share-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  background-color: #f0f2f5;
+  border-radius: 0.3rem;
+  padding: 1rem 3rem 1rem 3rem;
+  box-shadow: 1px 1px 7px rgba(0,0,0,0.5);
+  margin: 0.3rem;
+  justify-content: center;
+  align-items: center;
+}
+.share-image {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+.upper-post-share{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  
+}
+
+.share-post-comps {
+  width: 100%;
+  gap: 1rem;
+  display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.share-post-comps>div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.share-post-comps>div>span{
+  font-size: 1.15rem;
+}
+.share-input {
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+  height: 3rem;
+  border-radius:0.3rem;
+  padding-left: 0.7rem;
+  padding-right: 0.5rem;
+  border: 1px solid #383838;
+  font-size: 1.2rem;
+  background-color: transparent;
+  outline: none;
+}
+
+
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+margin-left: 4rem;
+}
+.action>img{
+  height: 2.8rem;
+  width: 2.8rem;
+}
+.share-button {
+  padding: 0.7rem 1.2rem 0.7rem 1.2rem;
+  border-radius: 0.3rem;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  background-color: #333;
+  color: #f0f2f5;
+  box-shadow: 1px 1px 4px #383838;
+  font-family: "Josefin Sans", sans-serif;
+}
+.share-button:hover{
+background-color: var(--logoTextColorPrimary);
+cursor: pointer;
+}
+.show-image{
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+.show-image>img{
+  object-fit: contain;
+ height: 25rem;
+ width: 100%;
+}
+.show-image>i{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  color: #333;
+  filter: none;
+}
+.share-post-error{
+  color: red;
+  font-size: 1.3rem;
+  margin: auto;
+}
+@media screen and (max-width:570px) {
+  .show-image>img{
+    object-fit: contain;
+   height: 20rem;
+   width: 100%;
+  }
+}
+@media screen and (max-width:500px) {
+  .post-share-card {
+
+    padding: 1rem 1rem 1rem 1rem;
+
+  }
+}
+@media screen and (max-width:400px) {
+  .post-share-card {
+ width: 95%;
+ margin: auto;
+  }
+  .action {
+  margin-left: 0rem;
+  }
+  .show-image>img{
+   height: 15rem;
+  }
+}

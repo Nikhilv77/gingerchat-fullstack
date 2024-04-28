@@ -1,0 +1,228 @@
+.all-members-modal{
+  height: 95vh;
+  width: 50vw;
+  background-color: var(--logoTextColorPrimary);
+  border-radius: 0.4rem;
+  box-shadow: 2px 2px 5px rgb(0,0,0);
+  position: fixed;
+  display: grid;
+  place-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: 0.5s ease-in-out;
+  z-index: 1003;
+  
+}
+.ri-close-large-line{
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  color: #fff;
+  font-size: 2.3rem;
+  filter: drop-shadow(2px 2px 2px rgb(0,0,0));
+  cursor: pointer;
+}
+.all-members-modal-container{
+  background-color: #333;
+  width: 95%;
+  height: 95%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+ justify-content: flex-start;
+ align-items: center;
+  gap: 2rem;
+  border-radius: 0.4rem;
+  padding: 2rem;
+  overflow-y: scroll;
+
+}
+.all-members-modal-container>h2{
+  font-size: 2rem;
+  color: #f0f2f5;
+  font-weight: 500;
+}
+.search-friends-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 80%;
+}
+.search-friends-form>input{
+  width: 100%;
+  background-color: var(--logoTextColorPrimary);
+  border-radius: 0.2rem;
+  color: #333;
+  outline: none;
+  border: none;
+  padding: 0.7rem;
+  font-size: 1.1rem;
+  font-family: var(--font-family);
+  font-weight: 600;
+}
+
+.search-friends-form>button{
+  border-radius: 0.4rem;
+  padding: 0.8rem 1.3rem 0.8rem 1.3rem;
+  border: none;
+  outline: none;
+  font-family: var(--font-family);
+  background-color: var(--logoTextColorPrimary);
+  font-size: 1.1rem;
+  color: var(--black);
+  cursor: pointer;
+  font-weight: 600;
+}
+.all-members-modal-items{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: center;
+ gap: 1rem;
+  height: 90%;
+  width: 90%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.all-members-modal-item{
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+}
+.all-members-modal-item>img{
+  height: 18rem;
+  width: 90%;
+  border-radius: 0.2rem;
+  align-self: end;
+  object-fit: contain;
+  background-color: #000;
+}
+.all-members-modal-item-description{
+  display: grid;
+  place-items: center;
+  gap: 0.7rem;
+  width: 90%;
+  text-align: center;
+}
+.all-members-modal-item-names{
+  display: grid;
+  place-items: center;
+  gap: 0.3rem;
+}
+.all-members-modal-item-names>p:nth-child(1){
+  color: var(--logoTextColorPrimary);
+  font-size: 1.4rem;
+}
+.all-members-modal-item-names>p:nth-child(1):hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.all-members-modal-item-names>p{
+  color: var(--logoTextColorPrimary);
+  font-size: 1.2rem;
+}
+
+.all-members-modal-item-description>span{
+  color: #f0f2f5;
+  font-size: 1.2rem;
+}
+
+.all-members-modal-item>button{
+  border-radius: 0.4rem;
+  padding: 0.8rem 1.3rem 0.8rem 1.3rem;
+  border: none;
+  outline: none;
+  font-family: var(--font-family);
+  background-color: var(--logoTextColorPrimary);
+  font-size: 1.1rem;
+  color: #333;
+  cursor: pointer;
+  font-weight: 600;
+}
+.friend-request-sent{
+  background-color: #787878 !important;
+}
+.friend-request-sent-p{
+  color: var(--logoTextColorPrimary);
+  font-size: 1.2rem;
+  text-align: center;
+}
+.no-users-found-in-array{
+  display: grid;
+  place-items: center;
+  margin: auto;
+}
+.no-users-found-in-array>i{
+  color: #f0f2f5;
+  font-size: 6rem;
+}
+.no-users-found-in-array>span{
+  color: #f0f2f5;
+  font-size: 1.7rem;
+  text-align: center;
+}
+@media screen and (max-width:1200px){
+  .all-members-modal{
+    width: 55vw;
+  }
+  .all-members-modal-container{
+    padding: 2rem 0.5rem 2rem 0.5rem;
+  }
+  .all-members-modal-container>h2{
+    font-size: 1.8rem;
+  }
+  .search-friends-form{
+    width: 90%;
+  }
+}
+@media screen and (max-width:1000px){
+  .all-members-modal{
+    width: 60vw;
+  }
+
+}
+@media screen and (max-width:850px){
+  .all-members-modal{
+    width: 70vw;
+  }
+
+}
+@media screen and (max-width:650px){
+  .all-members-modal{
+    width: 80vw;
+  }
+}
+@media screen and (max-width:500px){
+  .all-members-modal{
+    width: 85vw;
+  }
+  .all-members-modal-item>img{
+    height: 14rem !important;
+  }
+  .all-members-modal-items{
+    width: 95%;
+  }
+  .search-friends-form>button{
+    border-radius: 0.4rem;
+    padding: 0.6rem 1.1rem 0.6rem 1.1rem;
+    font-size: 1.1rem;
+  }
+  .no-users-found-in-array>i{
+    color: #f0f2f5;
+    font-size: 4.3rem;
+  }
+  .no-users-found-in-array>span{
+    font-size: 1.4rem;
+  }
+
+}
+@media screen and (max-width:400px){
+  .all-members-modal{
+    width: 92vw;
+  }
+
+}

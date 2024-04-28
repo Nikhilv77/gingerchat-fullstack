@@ -1,0 +1,122 @@
+.my-posts-modal{
+  height: 95vh;
+  width: 55vw;
+  background-color: var(--logoTextColorPrimary);
+  border-radius: 0.4rem;
+  box-shadow: 2px 2px 5px rgb(0,0,0);
+  position: fixed;
+  display: grid;
+  place-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: 0.5s ease-in-out;
+  z-index: 1003;
+}
+.my-posts-modal-container{
+  height: 92%;
+  width: 95%;
+  background-color: #333;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ gap: 1.5rem;
+ align-items: center;
+  position: relative;
+  border-radius: 0.4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  overflow-y: scroll;
+}
+.my-posts-modal-container>h2{
+  font-size: 2.2rem;
+  color: #f0f2f5;
+  font-weight: 500;
+}
+
+.ri-close-large-line{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  color: #fff;
+  font-size: 2.3rem;
+  filter: drop-shadow(2px 2px 2px rgb(0,0,0));
+  cursor: pointer;
+}
+.my-post-loader{
+  margin: auto;
+}
+.my-posts{
+  height: 90%;
+  width: 90%;
+  overflow-y: scroll;
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+}
+.no-user-posts{
+  display: grid;
+  place-items: center;
+}
+.no-user-posts>i{
+  color: #f0f2f5;
+  font-size: 6rem;
+}
+.no-user-posts>span{
+  color: #f0f2f5;
+  font-size: 1.7rem;
+  text-align: center;
+}
+@media screen and (max-width:1200px){
+  .my-posts-modal{
+    width: 60vw;
+  }
+  .my-posts-modal-container>h2{
+    font-size: 2rem;
+  }
+  .my-posts{
+    width: 95%;
+  }
+  
+}
+@media screen and (max-width:1000px){
+  .my-posts-modal{
+    width: 65vw;
+  }
+  .my-posts-modal-container>h2{
+    font-size: 1.9rem;
+  }
+
+}
+@media screen and (max-width:850px){
+  .my-posts-modal{
+    width: 70vw;
+  }
+  .my-posts{
+    width: 97%;
+  }
+}
+@media screen and (max-width:650px){
+  .my-posts-modal{
+    width: 90vw;
+  }
+}
+@media screen and (max-width:500px){
+  .my-posts-modal{
+    width: 94vw;
+  }
+  .no-user-posts>i{
+    color: #f0f2f5;
+    font-size: 4.3rem;
+  }
+  .no-user-posts>span{
+    font-size: 1.4rem;
+  }
+
+}
+@media screen and (max-width:400px){
+  .my-posts-modal{
+    width: 97vw;
+  }
+
+}
